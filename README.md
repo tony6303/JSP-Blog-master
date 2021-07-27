@@ -53,3 +53,11 @@ CREATE TABLE reply(
     foreign key (boardId) references board (id) on delete cascade
 ) engine=InnoDB default charset=utf8;
 ```
+
+## Blog 기능
+회원가입, 아이디 중복체크 , 회원정보 수정  
+juso.go.kr 자동 주소 입력 api  
+글 작성 , 수정 , 삭제  
+글 키워드로 검색 기능(sql : like %keyword% )  
+댓글 작성 , 삭제
+
