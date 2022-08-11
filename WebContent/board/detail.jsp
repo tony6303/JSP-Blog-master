@@ -7,6 +7,7 @@
 %>
 
 <div class="container">
+	<a class="btn btn-secondary" href="javascript:history.back()">뒤로가기</a>
 	<c:if test="${sessionScope.principal.id == dto.userId}">
 		<a class="btn btn-warning" href="/blog/board?cmd=updateForm&id=${dto.id}">수정</a>
 		<button class="btn btn-danger" onClick="deleteById(${dto.id})">삭제</button>

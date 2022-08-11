@@ -8,7 +8,7 @@
 	<form action="/blog/user?cmd=login" method="post">
 		<div class="form-group">
 			<input type="text" id="username" name="username" class="form-control"
-				placeholder="Enter Username" required/>
+				placeholder="Enter Username" autocomplete="off" required/>
 		</div>
 
 		<div class="form-group">

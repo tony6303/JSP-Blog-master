@@ -73,7 +73,7 @@ public class BoardDao {
 	public List<Board> findAll(int page){
 		List<Board> boards = new ArrayList<>();
 		
-		String sql = "select * from board order by id DESC limit ?, 4;";
+		String sql = "select * from board order by id ASC limit ?, 4;"; // DESC , ASC
 		Connection conn = DB.getConnection();
 		PreparedStatement pstmt = null;
 		ResultSet rs  = null;
@@ -92,6 +92,13 @@ public class BoardDao {
 						.build();
 				boards.add(boardEntity);
 			}
+			System.out.println("글목록조회 조회 출력 시작");
+			for(int i = 0; i < boards.size(); i++) {
+				System.out.println("제목 : " + boards.get(i).getTitle());
+				System.out.println("내용 : " + boards.get(i).getContent().trim());
+			}
+			System.out.println("글목록조회 조회 출력 종료");
+			
 			return boards;
 		} catch (Exception e) {
 			e.printStackTrace();

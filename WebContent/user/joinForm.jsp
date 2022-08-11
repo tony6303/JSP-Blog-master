@@ -10,7 +10,7 @@
 		</div>
 		<div class="form-group">
 			<input type="text" id="username" name="username" class="form-control"
-				placeholder="Enter Username" required/>
+				placeholder="Enter Username" autocomplete="off" required/>
 		</div>
 
 		<div class="form-group">
@@ -20,14 +20,14 @@
 
 		<div class="form-group">
 			<input type="email" name="email" class="form-control"
-				placeholder="Enter Email" required />
+				placeholder="Enter Email" autocomplete="off" required />
 		</div>
 
 		<div class="d-flex justify-content-end">
 			<button type="button" class="btn btn-info" onClick="goPopup();">주소검색</button>
 		</div>
 		<div class="form-group">
-			<input type="text"  name="address"  id="address" class="form-control" placeholder="Enter Address"  required/>
+			<input type="text"  name="address"  id="address" class="form-control" placeholder="Enter Address" autocomplete="off"  required/>
 		</div>
 		<button type="submit" class="btn btn-primary">회원가입완료</button>
 	</form>

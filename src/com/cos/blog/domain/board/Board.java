@@ -22,6 +22,7 @@ public class Board {
 	public String getTitle() {
 		return title.replaceAll("<", "&lt").replaceAll(">", "&gt");
 	}
+	
 }
 
 
