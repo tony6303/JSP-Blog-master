@@ -1,6 +1,13 @@
 # JSP-Blog-master
 기존에 있던 JSP-Blog-V2 에 있던 blog 프로젝트 ( https://github.com/tony6303/JSP-BLog-V2 )를 수정, 보완했습니다.
 
+## Blog 기능
+회원가입, 아이디 중복체크 , 회원정보 수정  
+juso.go.kr 자동 주소 입력 api  
+글 작성 , 수정 , 삭제  
+글 키워드로 검색 기능(sql : like %keyword% )  
+댓글 작성 , 삭제
+
 ## 환경
 
 - windows10
@@ -53,3 +60,6 @@ CREATE TABLE reply(
     foreign key (boardId) references board (id) on delete cascade
 ) engine=InnoDB default charset=utf8;
 ```
+
+
+
